@@ -1,6 +1,5 @@
 body {
-    margin: 0;
-    /* Added to ensure padding/border don't increase element size */
+    margin: 0;  
     box-sizing: border-box; 
 }
 
@@ -8,7 +7,6 @@ body {
     font-family: 'roboto', sans-serif;
 }
 
-/* This is a general block and is okay, but you should style individual containers */
 .main-container .one-container,
 .main-container .two-container,
 .main-container .three-container {
@@ -20,12 +18,11 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px; /* Moved from head-con to here */
-    background-color: #1f2937; /* Moved from head-con to here */
-    color: white; /* Moved from head-con to here */
+    height: 50px; 
+    background-color: #1f2937; 
+    color: white; 
 }
 
-/* Good general reset for flex */
 .one-container,
 .two-container,
 .three-container,
@@ -47,10 +44,7 @@ footer {
     flex-direction: column;
 }
 
-/* --- HERO SECTION CENTERING FIXES --- */
 .head-con {
-    /* REMOVED: height: 50px; background-color: #1f2937; color: white; (moved to footer/one-container) */
-    /* NEW: Responsive Centering for Header */
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px; 
@@ -59,11 +53,10 @@ footer {
     align-items: center;
 }
 
-/* Add background color to the overall hero section, not just the content wrapper */
 .one-container {
     background-color: #1f2937;
     color: white;
-    padding-top: 20px; /* Give the header some top/bottom padding */
+    padding-top: 20px; 
     padding-bottom: 20px; 
 }
 
@@ -73,16 +66,12 @@ footer {
     
 }
 
-.logo {
-    /* Set an explicit minimum width or right margin */
-    min-width: 400px; /* e.g., to reserve space */
-    /* Or just a margin for better separation */
+.logo {  
+    min-width: 400px; 
     margin-right: auto;
 }
 
 .content-con {
-    /* REMOVED: background-color: #1f2937; height: 420px; color: white; (moved to .one-container) */
-    /* NEW: Responsive Centering for Hero Content */
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px; 
@@ -119,7 +108,6 @@ footer {
     height: 380px;
 }
 
-
 .title {
     font-size: 36px;
     font-weight: 900;
@@ -127,10 +115,9 @@ footer {
     
 }
 
-/* --- FOUR-BOX SECTION FIX --- */
 .box {
-    display: flex; /* Ensures it's a flex container */
-    justify-content: center; /* Centers the four boxes horizontally */
+    display: flex; 
+    justify-content: center; 
     gap: 50px;
     margin-bottom: 30px;
 }
@@ -139,9 +126,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     gap: 10px;
-    /* Removed flex-wrap: wrap as it is not needed here */
     margin: 0 auto;
-    /* Added min-width to prevent the box from shrinking too much on smaller screens */
     min-width: 150px; 
 }
 
@@ -153,8 +138,7 @@ footer {
     
 }
 
-.text-box {
-    
+.text-box {   
     max-width: 150px;
     width: 100%;
     text-align: center;
@@ -162,8 +146,7 @@ footer {
    
 }
 
-.three-container {
-    
+.three-container {   
     height: 320px;
     background-color: rgb(222, 226, 236);
 }
@@ -175,19 +158,16 @@ footer {
     font-size: 36px;
     padding: 60px;
     padding-bottom: 1px;
-    /* CHANGED width to max-width for responsiveness */
     max-width: 800px; 
-    color: #24303f;
-    
+    color: #24303f; 
     font-weight: 300;
     font-style: italic;
     
 }
 
 .author {
-    align-self: flex-end; /* Used flex-end for better alignment */
-    /* REMOVED: margin-right: 560px; */
-    margin-right: 15%; /* Use a percentage for better responsiveness */
+    align-self: flex-end; 
+    margin-right: 15%; 
     font-weight: 800;
     font-size: x-large;
 }
@@ -205,14 +185,11 @@ button {
     background-color: #3882e6;
 }
 
-/* --- CALL TO ACTION (CTA) FIXES --- */
 .four-container {
     height: 120px;
     justify-content: space-between;
-    /* NEW: Responsive Centering for CTA */
     max-width: 1000px; 
-    margin: 60px auto; 
-    
+    margin: 60px auto;   
     align-items: center;
     padding: 0px 100px;
     box-sizing: border-box;
@@ -249,6 +226,3 @@ button {
     font-size: 18px;
     color: #e5e7eb;
 }
-
-/* This is where your footer content was but it's cleaner to use the footer tag directly */
-/* footer { ... see top of file } */
